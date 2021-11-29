@@ -1,0 +1,28 @@
+service: starships-api
+variablesResolutionMode: 20210326
+
+frameworkVersion: '2 || 3'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: 
+  stage: dev
+  lambdaHashingVersion: 20201221
+
+functions:
+  list:
+    handler: starships/list.list
+    events:
+      - http:
+          path: starships
+          method: get
+          private: true
+
+  get:
+    handler: starships/get.get
+    events:
+      - http:
+          path: starships/{id}
+          method: get
+          private: true
