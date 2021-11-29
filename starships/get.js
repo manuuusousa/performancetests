@@ -5,14 +5,15 @@ module.exports.get = async (event, context, callback) => {
     const id = event.pathParameters.id
     const response = await axios.get('https://swapi.dev/api/starships/' + id)
     const starship = response.data
-  return {
-      statusCode: 200,
-      body: {
-        "Name:": starship.name,
+    const starshipObject = {
+         "Name:": starship.name,
         "Model:": starship.model,
          "Costs in galactic credits:": starship.cost_in_credits,
          "Rate:": starship.hyperdrive_rating,
-      },
+      };
+  return {
+      statusCode: 200,
+      body: JSON.stringify(starshipObject),
       headers: { 'Content-Type': 'text/plain' },
    };
   } catch (e) {

@@ -1,19 +1,12 @@
 const axios = require("axios");
 
-module.exports.get = async (event, context, callback) => {
+module.exports.list = async (event, context, callback) => {
   try {
-    const id = event.pathParameters.id
-    const response = await axios.get('https://swapi.dev/api/starships/' + id)
-    const starship = response.data
-    const starshipObject = {
-         "Name:": starship.name,
-         "Model:": starship.model,
-         "Costs in galactic credits:": starship.cost_in_credits,
-         "Rate:": starship.hyperdrive_rating,
-      };
+    const response = await axios.get('https://swapi.dev/api/starships');
+    const starships = response.data.results
   return {
       statusCode: 200,
-      body: JSON.stringify(starshipObject),
+      body: JSON.stringify(starships),
       headers: { 'Content-Type': 'text/plain' },
    };
   } catch (e) {
@@ -21,7 +14,7 @@ module.exports.get = async (event, context, callback) => {
     const errorObject = {
         error: {
             title: e.statusCode,
-            description: 'Couldn\'t get the starship.',
+            description: 'Couldn\'t list the starships.',
         },
     };
     return {
