@@ -1,34 +1,34 @@
 {
-  "Search Request" : {
-    "transaction" : "Search Request",
-    "sampleCount" : 244386,
+  "List Starships Request" : {
+    "transaction" : "List Starships Request",
+    "sampleCount" : 4,
     "errorCount" : 0,
     "errorPct" : 0.0,
-    "meanResTime" : 42.41904200731639,
-    "medianResTime" : 38.0,
-    "minResTime" : 21.0,
-    "maxResTime" : 2763.0,
-    "pct1ResTime" : 51.0,
-    "pct2ResTime" : 61.0,
-    "pct3ResTime" : 95.0,
-    "throughput" : 613.6389316446416,
-    "receivedKBytesPerSec" : 5154.640994128006,
-    "sentKBytesPerSec" : 154.13902653076406
+    "meanResTime" : 1047.5,
+    "medianResTime" : 892.0,
+    "minResTime" : 765.0,
+    "maxResTime" : 1641.0,
+    "pct1ResTime" : 1641.0,
+    "pct2ResTime" : 1641.0,
+    "pct3ResTime" : 1641.0,
+    "throughput" : 0.9429514380009429,
+    "receivedKBytesPerSec" : 5.844641383781235,
+    "sentKBytesPerSec" : 0.1998246699669967
   },
   "Total" : {
     "transaction" : "Total",
-    "sampleCount" : 244386,
+    "sampleCount" : 4,
     "errorCount" : 0,
     "errorPct" : 0.0,
-    "meanResTime" : 42.41904200731639,
-    "medianResTime" : 38.0,
-    "minResTime" : 21.0,
-    "maxResTime" : 2763.0,
-    "pct1ResTime" : 51.0,
-    "pct2ResTime" : 61.0,
-    "pct3ResTime" : 95.0,
-    "throughput" : 613.6389316446416,
-    "receivedKBytesPerSec" : 5154.640994128006,
-    "sentKBytesPerSec" : 154.13902653076406
+    "meanResTime" : 1047.5,
+    "medianResTime" : 892.0,
+    "minResTime" : 765.0,
+    "maxResTime" : 1641.0,
+    "pct1ResTime" : 1641.0,
+    "pct2ResTime" : 1641.0,
+    "pct3ResTime" : 1641.0,
+    "throughput" : 0.9429514380009429,
+    "receivedKBytesPerSec" : 5.844641383781235,
+    "sentKBytesPerSec" : 0.1998246699669967
   }
 }

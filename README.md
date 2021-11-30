@@ -10,7 +10,7 @@ This is a simple lambda code associated with API Gateway endpoint that calls the
 
 ### Pré-requisitos
 
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+Before starting, you will need to have the following tools installed on your machine::
 [Git](https://git-scm.com), 
 [Node.js](https://nodejs.org/en/). 
 
@@ -27,5 +27,5 @@ In order to deploy the endpoint simply run
 serverless deploy
 ```
 
-## Para informações sobre como executar os testes de performance vá em test/performance/infrastructure/README.md
+## For information on how to run performance tests go to: test/performance/infrastructure/README.md
 
